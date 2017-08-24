@@ -1,6 +1,6 @@
 class SlackEventsController < ApplicationController
   def post
-    router = Servo::Router.build do |r|
+    router = Servo::Slack::Router.build do |r|
       r.route text: [/tomservo/i,/is a bot/] do |opts,event|
         puts "I'm probably not a bot. Am i?"
         client = Slack::Web::Client.new
