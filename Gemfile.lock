@@ -1,5 +1,6 @@
-PATH
-  remote: ../servo-slack
+GIT
+  remote: https://github.com/tannerburson/servo-slack.git
+  revision: 32c8c18f0012a58d177fdd9286c683b5ef2d69fa
   specs:
     servo-slack (0.1.0)
       slack-ruby-client

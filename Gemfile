@@ -35,4 +35,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'slack-ruby-client'
 
-gem 'servo-slack', path: '~/src/servo-slack'
+gem 'servo-slack', github: 'tannerburson/servo-slack'
