@@ -14,7 +14,7 @@ class ChannelPageMessage
 
   def call(msg)
     @payload = msg
-    client.chat_postMessage(channel: SLACK_NOTIFICATION_CHANNEL, text: "#{sent_from}: #{selected_option['value']} \"#{selected_option['text']}\" #{alert_level_for(selected_option['value'])}")
+    client.chat_postMessage(channel: ENV['PAGE_NOTIFICATION_CHANNEL'], text: "#{sent_from}: #{selected_option['value']} \"#{selected_option['text']}\" #{alert_level_for(selected_option['value'])}")
     return 'Got it! :+1: Message has been relayed, someone will get back with you.'
   end
 

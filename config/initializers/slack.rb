@@ -2,8 +2,6 @@ require 'servo/slack'
 require "#{Rails.root}/app/controllers/slack/channel_page_message"
 require "#{Rails.root}/app/controllers/slack/page_an_engineer_command"
 
-SLACK_NOTIFICATION_CHANNEL = '#botplayground'
-
 Slack.configure do |config|
   config.token = ENV['SLACK_API_TOKEN']
 end
